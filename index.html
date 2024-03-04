@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars - Teslia Andriiа</title>
+    <style>
+        img {
+            max-width: 50%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Лабораторна робота 1-3</h1>
+        <div class="menu-toggle">Розділи &#9776;</div>
+
+        <nav>
+            <section class="menu">
+                <div class="menu-item"><a href="#section1">Розділ 1</a></div>
+                <div class="menu-item"><a href="#section2">Розділ 2</a></div>
+                <div class="menu-item"><a href="#section3">Розділ 3</a></div>
+            </section>
+        </nav>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const menuToggle = document.querySelector('.menu-toggle');
+                const menu = document.querySelector('.menu');
+
+                menuToggle.addEventListener('click', function () {
+                const menu = document.querySelector('.menu');
+                menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+            });
+
+            document.querySelector('header').appendChild(menuToggle);
+            });
+        </script>
+    </header>
+
+    <main>
+        <section id="section1" class="section-container">
+            <h2>Розділ 1</h2>
+            <div class="block-container">
+                <h3>Гіперпосилання на сторінки сайтів</h3>
+                <a href="http://www.google.com">Посилання на сайт</a>
+            </div>
+
+            <div class="block-container">
+                <h3>Вкладені блоки</h3>
+                <div class="block-container">
+                    <p>Це вкладений блок</p>
+                </div>
+            </div>
+
+            <div class="block-container">
+                <h3>Рисунки</h3>
+                <img src="image/honda_civic.jpeg" alt="Honda Civic 2021">
+            </div>
+
+            <br>
+
+            <div class="block-container">
+                <h3>Текст з заголовком та форматуванням</h3>
+                <p><strong>Це жирний текст</strong></p>
+                <p><em>Це курсивний текст</em></p>
+            </div>
+
+            <div class="block-container">
+                <h3>Спеціальні символи</h3>
+                <p>Звичайний текст і ось кілька спеціальних символів: &copy; &lt; &gt; &amp;</p>
+            </div>
+
+            <div class="block-container">
+                <h3>Таблиця</h3>
+                <table border="1">
+                    <tr>
+                        <th>Заголовок колонки 1</th>
+                        <th>Заголовок колонки 2</th>
+                    </tr>
+                    <tr>
+                        <td>Рядок 1, Колонка 1</td>
+                        <td>Рядок 1, Колонка 2</td>
+                    </tr>
+                    <tr>
+                        <td>Рядок 2, Колонка 1</td>
+                        <td>Рядок 2, Колонка 2</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="block-container">
+                <h3>Списки</h3>
+                <ul>
+                    <li>Елемент списку 1</li>
+                    <li>Елемент списку 2</li>
+                </ul>
+
+                <ol>
+                    <li>Нумерований елемент списку 1</li>
+                    <li>Нумерований елемент списку 2</li>
+                </ol>
+
+                <dl>
+                    <dt>Термін 1</dt>
+                    <dd>Визначення 1</dd>
+                    <dt>Термін 2</dt>
+                    <dd>Визначення 2</dd>
+                </dl>
+            </div>
+
+            <div class="block-container">
+                <h3>Форми</h3>
+                <form action="/submit" method="post">
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Електронна пошта:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="checkbox">Погоджуюсь з умовами кредитування:</label>
+                    <input type="checkbox" id="checkbox" name="checkbox" required>
+
+                    <button type="submit">Відправити</button>
+                </form>
+            </div>
+
+        </section>
+
+        <section id="section2" class="section-container">
+            <h2>Розділ 2</h2>
+            <div class="block-container">
+                <p>Текст для розділу 2...</p>
+            </div>
+        </section>
+
+        <section id="section3" class="section-container">
+            <h2>Розділ 3</h2>
+            <div class="block-container">
+                <p>Текст для розділу 3...</p>
+                <div class="block-container">
+                    <p>Ще один вкладений блок у розділі 3...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <br>
+
+    <footer>
+        <p>&copy; 2024 Моя веб-сторінка. Усі права захищено.</p>
+    </footer>
+
+</body>
+
+</html>
